@@ -1,0 +1,13 @@
+Script started at: Wed Mar  6 18:01:15 UTC 2024
+Processing sub-NDARINVC1T4T2DC
+Generating CSV for sub-NDARINVC1T4T2DC tracts_commissural
+Generating CSV for sub-NDARINVC1T4T2DC tracts_left_hemisphere
+Generating CSV for sub-NDARINVC1T4T2DC tracts_right_hemisphere
+CSV_ROOT_DIR is set to: /home/ubuntu/wm_diffusion_measurements/CSVFILES
+Elapsed time for sub-NDARINVC1T4T2DC: 252 seconds
+Start time: 1709748075, End time: 1709748327
+Start time: 1709748075, End time: 1709748327
+Elapsed time for all subjects: 252 seconds
+Elapsed time for all subjects: 252 seconds
+Script ended at: Wed Mar  6 18:05:27 UTC 2024
+Script ended at: Wed Mar  6 18:05:27 UTC 2024

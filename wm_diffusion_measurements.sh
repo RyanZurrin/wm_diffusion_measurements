@@ -3,12 +3,12 @@
 # Set default values
 SLICER_DIR_DEFAULT=~/Slicer-5.2.2-linux-amd64
 LOCAL_DATA_DIR_DEFAULT=/home/ubuntu/data
-CSV_ROOT_DIR_DEFAULT=/home/ubuntu/CSVFILES
+CSV_ROOT_DIR_DEFAULT=/home/ubuntu/wm_diffusion_measurements/CSVFILES
 FIBER_TRACT_MEASUREMENTS_DEFAULT="$SLICER_DIR_DEFAULT/NA-MIC/Extensions-31382/SlicerDMRI/lib/Slicer-5.2/cli-modules/FiberTractMeasurements"
 S3_BUCKET_NAME_DEFAULT="nda-enclave-c3371"
 S3_DATA_DIR_DEFAULT="abcdRelease3_dMRIHarmonized/Derivatives"
-CASELIST_DEFAULT="/home/ubuntu/bin/sub_test.txt"
-LOGFILE_DEFAULT="/home/ubuntu/bin/wm_diffusion_measurements.log"
+CASELIST_DEFAULT="/home/ubuntu/wm_diffusion_measurements/sub_test.txt"
+LOGFILE_DEFAULT="/home/ubuntu/wm_diffusion_measurements/wm_diffusion_measurements.log"
 
 # Parse command line options
 while getopts ":s:r:v:f:b:d:c:l:" opt; do
@@ -103,7 +103,7 @@ process_subject() {
     done
 
     # Cleanup local data
-    rm -rf "$LOCAL_DATA_DIR/$subject_id"
+#     rm -rf "$LOCAL_DATA_DIR/$subject_id"
 
     end_time=$(date +%s)
     elapsed_time=$((end_time - start_time))
